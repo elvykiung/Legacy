@@ -1,48 +1,45 @@
-# Legacy Project
+# Legacy Group Project
 
-## Who is your target audience?
+## Table of contents
 
-- Our target audience is volunteers of different demographic groups who are willing to change the World and want be a part of large Non-Profit Organizations which are making the difference.
+- [General info](#general-info)
+- [Technologies](#technologies)
+- [Deployment](#Deployment)
+- [APIs Used](#APIs-Used)
+- [Code Overview](#Code-Overview)
+- [Team Members](#Team-Members)
 
-## The goals of the product
+## General info
 
-The site will direct our customers and simplify the path of planning a Volunteer Project in order to safe time, energy and money and connect our customers with the right resources ( in our case with Non-Profit organizations).
+The goals of our application is to direct our user and simplify the path of planning a Volunteer Project in order to safe time, energy and money and connect our user with the right resources ( in our case with Non-Profit organizations).
 
-## What is the problem that the product will address?
+![screenshot](assets/imgs/final.png)
 
-What is the problem that the product will address
-“Legacy” will direct our customers and simplify the path of planning a Volunteer Project in order to safe time, energy and money and connect our customers with the right resources ( in our case with Non-Profit organizations).
+## Technologies
 
-## The Goal of the product:
+- Sweet Alert
+- Firebase
+- JavaScript
+- JQuery
+- Bootstrap - CSS Framework
+- HTML 5 & CSS 3
 
-- To match people interests with the volunteer Organizations
-- Increase # of volunteers
-- Provide Volunteers with useful resource to plan a Volunteer Project
+## Deployment
 
-## Our project user stories
+- Live link: https://elvykiung.github.io/Legacy/ or http://127.0.0.1:5501/index.html
 
-1. As a volunteer I want to see hot topics of places/people/animals in need so as I can choose an Volunteer Organization by topic.
+- Portfolio link: https://elvykiung.github.io/
 
-   **Acceptance Criteria:**
+## APIs Used
 
-- Display images of related hot topics
-- Make images of hot topics clickable
-- Link each topic to a specific Organization
-- When click on hot topic Image, it should navigate to list of Organizations
+- Trend API - TrendSpotter
+- Volunteer API - Google Search API
+- Map API - Google Map API
+- Image API - Pixabay Api
 
-2. As a volunteer I want to have a search field so as I can search Volunteer opportunities by location.
+## Team Members
 
-   **Acceptance Criteria:**
-
-- Display a Search filed
-- Link Search field to Volunteer API so that it will display Non-Profit Volunteer Organizations by location
-- Display Submit button and Search Button
-
-3. As a volunteer I want to see organizations which provide volunteer opportunities so that I can join and participate.
-
-   **Acceptance Criteria:**
-
-- Display ”Join” button on each Organization
-- Display Name and details of Organization
-- Rating of Organization
-- Review of Organization
+- Jing Xie
+- Viktoryia Shypitas
+- Elvy Kiung
+- John Raphael
