@@ -13,7 +13,7 @@
 
 The goals of our application is to direct our user and simplify the path of planning a Volunteer Project in order to safe time, energy and money and connect our user with the right resources ( in our case with Non-Profit organizations).
 
-![screenshot](assets/imgs/final.png)
+![screenshot](https://github.com/elvykiung/Legacy/blob/master/assets/imgs/final.PNG?raw=true)
 
 ## Technologies
 
