@@ -11,7 +11,16 @@ function initMap() {
 $(document).ready(function() {
   var urlParams = new URLSearchParams(window.location.search);
 
-  //search bar is clicked or keypress on the MAIN PAGE!
+  //get the string from url parameters
+  $('#hottopicSearch').val(urlParams.get('search'));
+
+  //***when page loaded, run this function to add card and markers on google maps
+  displayHottopicSearch();
+
+  //type keyword in the search bar on the main page and dispay info on the VolunteerSearch page
+  var randerNextPage = function() {
+    window.location.href = '../html/hottopicsSearch.html?search=' + $('#hottopicSearch').val();
+  };
 
   // on the main page, if hottopic search button is clicked, redirect to the VolunteerSearch page and apply input value to url
   $('#hottopicSearchBtn').on('click', randerNextPage);
@@ -23,37 +32,13 @@ $(document).ready(function() {
     }
   });
 
-  //type keyword in the search bar on the main page and dispay info on the VolunteerSearch page
-  var randerNextPage = function() {
-    window.location.href = 'html/hottopicsSearch.html?search=' + $('#hottopicSearch').val();
-  };
-
-  //SEARCH PAGE!!
-
-  //get the string from url parameters and give the value to search bar on the search page
-  $('#hottopicSearch2').val(urlParams.get('search'));
-
-  //***when search page loaded, run this function to add card and markers on google maps
-  displayHottopicSearch();
-
-  //reload search page when search bar is clicked or key entered
-  var randerNextPage2 = function() {
-    window.location.href = 'hottopicsSearch.html?search=' + $('#hottopicSearch2').val();
-  };
-
-  // when search button on search page is clicked, reload the page and apply input value to url
-  $('#htSearch').on('click', randerNextPage2);
-
-  $('#hottopicSearch2').on('keypress', function(event) {
-    if (event.key === 'Enter') {
-      randerNextPage2();
-    }
-  });
+  // when search button is clicked, reload the page and apply input value to url
+  $('#htSearch').on('click', randerNextPage);
 
   function displayHottopicSearch() {
     $('.volunteer-section').empty();
 
-    var hotTopics = $('#hottopicSearch2')
+    var hotTopics = $('#hottopicSearch')
       .val()
       .trim();
     var queryURL =
